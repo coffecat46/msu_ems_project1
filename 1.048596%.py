@@ -28,6 +28,7 @@ def ni(start, end, step):
         try:
             # second 'try' for errors in formula
             errorhappened = 0
+            check = 1/x
             check = x ** 3 + 3 * math.log2(-(x + 2) / 6) - 2 ** x - math.sqrt((x ** 2) - 3 * x + 17)
             check = math.sqrt(step)
             # I found that with math.isclose function I can properly count with float type start or step
